@@ -1,0 +1,159 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /spi_Wrapper_tb/DUT/sva
+=== Design Unit: work.spi_wrapper_sva
+=================================================================================
+
+Directive Coverage:
+    Directives                       1         0         1     0.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/spi_Wrapper_tb/DUT/sva/cov_rst_vals     spi_wrapper_sva Verilog  SVA  C:/Users/nemo/Desktop/Project/Team_1/Stuffffffff/SPI_WRAPPER/spi_wrapper_sva.sv(30)
+                                                                                 0 ZERO      
+
+=================================================================================
+=== Instance: /wrapper_package
+=== Design Unit: work.wrapper_package
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      2        na        na   100.00%
+        Coverpoints/Crosses          3        na        na        na
+            Covergroup Bins         11        11         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /wrapper_package/spi_data/covgrp_1              100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/wrapper_package::spi_data::covgrp_1  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin END_COMM                                       11          1          -    Covered              
+        bin STRT_COMM                                      11          1          -    Covered              
+ TYPE /wrapper_package/spi_data/covgrp_2              100.00%        100          -    Covered              
+    covered/total bins:                                     9          9          -                      
+    missing/total bins:                                     0          9          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CMDs_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/wrapper_package::spi_data::covgrp_2  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     9          9          -                      
+    missing/total bins:                                     0          9          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin MOSI_WRT_ADDR                                   2          1          -    Covered              
+        bin MOSI_WRT_DATA                                   6          1          -    Covered              
+        bin MOSI_RD_ADDR                                    5          1          -    Covered              
+        bin MOSI_RD_DATA                                   20          1          -    Covered              
+    Coverpoint CMDs_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin idle2_chk_cmd                                  12          1          -    Covered              
+        bin WRT_addr2_IDLE                                  3          1          -    Covered              
+        bin WRT_data2_IDLE                                  3          1          -    Covered              
+        bin RD_addr2_IDLE                                   3          1          -    Covered              
+        bin RD_data2_IDLE                                   2          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /wrapper_package/spi_data/covgrp_1              100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/wrapper_package::spi_data::covgrp_1  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin END_COMM                                       11          1          -    Covered              
+        bin STRT_COMM                                      11          1          -    Covered              
+ TYPE /wrapper_package/spi_data/covgrp_2              100.00%        100          -    Covered              
+    covered/total bins:                                     9          9          -                      
+    missing/total bins:                                     0          9          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CMDs_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/wrapper_package::spi_data::covgrp_2  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     9          9          -                      
+    missing/total bins:                                     0          9          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin MOSI_WRT_ADDR                                   2          1          -    Covered              
+        bin MOSI_WRT_DATA                                   6          1          -    Covered              
+        bin MOSI_RD_ADDR                                    5          1          -    Covered              
+        bin MOSI_RD_DATA                                   20          1          -    Covered              
+    Coverpoint CMDs_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin idle2_chk_cmd                                  12          1          -    Covered              
+        bin WRT_addr2_IDLE                                  3          1          -    Covered              
+        bin WRT_data2_IDLE                                  3          1          -    Covered              
+        bin RD_addr2_IDLE                                   3          1          -    Covered              
+        bin RD_data2_IDLE                                   2          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 2
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/spi_Wrapper_tb/DUT/sva/cov_rst_vals     spi_wrapper_sva Verilog  SVA  C:/Users/nemo/Desktop/Project/Team_1/Stuffffffff/SPI_WRAPPER/spi_wrapper_sva.sv(30)
+                                                                                 0 ZERO      
+
+TOTAL DIRECTIVE COVERAGE: 0.00%  COVERS: 1
+
+Total Coverage By Instance (filtered view): 50.00%
+
+

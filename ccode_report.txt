@@ -1,0 +1,704 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /spi_Wrapper_tb/DUT/sva
+=== Design Unit: work.spi_wrapper_sva
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         0         1     0.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/spi_Wrapper_tb/DUT/sva/chk_rst_vals
+                     spi_wrapper_sva.sv(17)             1          0
+
+Directive Coverage:
+    Directives                       1         0         1     0.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/spi_Wrapper_tb/DUT/sva/cov_rst_vals     spi_wrapper_sva Verilog  SVA  spi_wrapper_sva.sv(19)
+                                                                                 0 ZERO      
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         10         9         1    90.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /spi_Wrapper_tb/DUT/sva --
+
+                                              Node      1H->0L      0L->1H                          "Coverage"
+                                              ---------------------------------------------------------------
+                                          MISO_sva           1           1                              100.00 
+                                          MOSI_sva           1           1                              100.00 
+                                          SS_n_sva           1           1                              100.00 
+                                           clk_sva           1           1                              100.00 
+                                         rst_n_sva           0           1                               50.00 
+
+Total Node Count     =          5 
+Toggled Node Count   =          4 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =      90.00% (9 of 10 bins)
+
+=================================================================================
+=== Instance: /spi_Wrapper_tb/DUT
+=== Design Unit: work.spi_wrapper
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         10         9         1    90.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /spi_Wrapper_tb/DUT --
+
+                                              Node      1H->0L      0L->1H                          "Coverage"
+                                              ---------------------------------------------------------------
+                                              MISO           1           1                              100.00 
+                                              MOSI           1           1                              100.00 
+                                              SS_n           1           1                              100.00 
+                                               clk           1           1                              100.00 
+                                             rst_n           0           1                               50.00 
+
+Total Node Count     =          5 
+Toggled Node Count   =          4 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =      90.00% (9 of 10 bins)
+
+=================================================================================
+=== Instance: /spi_Wrapper_tb
+=== Design Unit: work.spi_Wrapper_tb
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         2         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/spi_Wrapper_tb/#anonblk#26782082#59#4#/#anonblk#26782082#64#4#/#ublk#26782082#64/immed__66
+                     spi_wrapper_tb.sv(66)              0          1
+/spi_Wrapper_tb/#anonblk#26782082#59#4#/#anonblk#26782082#104#4#/#ublk#26782082#104/immed__106
+                     spi_wrapper_tb.sv(106)             0          1
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /spi_Wrapper_tb
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File spi_wrapper_tb.sv
+------------------------------------IF Branch------------------------------------
+    120                                       24     Count coming in to IF
+    120             1                          3     				if (j == 6) begin
+    126             1                         21     				else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    152                                      188     Count coming in to IF
+    152             1                         48     		if (REQ_COMM) begin	
+                                             140     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    269                                        3     Count coming in to IF
+    269             1                          1     		if (data_retrieved == data_expected) begin
+    275             1                          2     		else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         2         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /spi_Wrapper_tb --
+
+  File spi_wrapper_tb.sv
+----------------Focused Condition View-------------------
+Line       120 Item    1  (j == 6)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+    (j == 6)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (j == 6)_0            -                             
+  Row   2:          1  (j == 6)_1            -                             
+
+----------------Focused Condition View-------------------
+Line       269 Item    1  (data_retrieved == data_expected)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+                         Input Term   Covered  Reason for no coverage   Hint
+                        -----------  --------  -----------------------  --------------
+  (data_retrieved == data_expected)         Y
+
+     Rows:       Hits  FEC Target                           Non-masking condition(s)      
+ ---------  ---------  --------------------                 -------------------------     
+  Row   1:          1  (data_retrieved == data_expected)_0  -                             
+  Row   2:          1  (data_retrieved == data_expected)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                     121       121         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /spi_Wrapper_tb --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File spi_wrapper_tb.sv
+    2                                                module spi_Wrapper_tb;
+    3                                                
+    4                                                	logic		clk_tb;
+    5                                                	logic		rst_n_tb;
+    6                                                	logic 		MOSI_tb;
+    7                                                	logic 		MISO_tb;
+    8                                                	logic 		SS_n_tb;
+    9                                                
+    10                                               	// FSM states
+    11                                               	fsm_states fsm;
+    12                                               
+    13                                               	// Arbitrary signal to indicate when to start/stop sampling of MOSI_COMM bit which refer to all possible CMDs.
+    14                                               	bit REQ_COMM = 0;
+    15                                               
+    16                                               	// Create object from class
+    17                                               	spi_data spiData;
+    18                                               
+    19                                               	// DUT instantiation
+    20                                               	spi_wrapper DUT (
+    21                                               		.clk(clk_tb),
+    22                                               		.rst_n(rst_n_tb),
+    23                                               		.MOSI(MOSI_tb),
+    24                                               		.MISO(MISO_tb),
+    25                                               		.SS_n(SS_n_tb)
+    26                                               	);
+    27                                               
+    28                                               	bind spi_wrapper spi_wrapper_sva sva(MISO,MOSI,SS_n,clk,rst_n);
+    29                                               
+    30                                               	// store write/read addresses 
+    31                                               	logic [7:0] addr_sent2RAM [];
+    32                                               	logic [7:0] data_sent2RAM_assoc = 8'b1000_1110;
+    33                                               	logic [7:0] data_retrieved [];
+    34                                               
+    35                                               	integer correct = 0;
+    36                                               	integer incorrect = 0;
+    37                                               
+    38                                               	localparam test_cases = 3;
+    39                                               
+    40                                               	initial begin
+    41                                               		
+    42              1                          1     		clk_tb = 0;
+    43              1                          1     		forever begin
+    44              1                        377     			#5
+    45              1                        376     			clk_tb = ~clk_tb;
+    46              1                        376     			spiData.clk = clk_tb;
+    47                                               		end 
+    48                                               	end
+    49                                               
+    50                                               
+    51                                               	initial begin
+    52                                               
+    53              1                          1     		spiData = new;
+    54              1                          1     		addr_sent2RAM = new[test_cases];
+    55              1                          1     		data_retrieved = new[test_cases];
+    56                                               
+    57                                               		// perform a RST
+    58              1                          1     		RST;
+    59              1                          1     		for (int i = 0;i < test_cases;i++) begin
+    59              2                          3     
+    60                                               
+    61                                                			// perform write address CMD
+    62              1                          3      			WRT_ADDR;
+    63                                               
+    64              1                          3     			for (int j = 0; j < 8;j++) begin
+    64              2                         24     
+    65                                               				
+    66                                               				assert(spiData.randomize);
+    67              1                         24     				@(negedge clk_tb)
+    68              1                         24     				MOSI_tb = spiData.MOSI;
+    69              1                         24     				addr_sent2RAM[i][j] = MOSI_tb;
+    70                                               				
+    71                                               			end
+    72                                               
+    73              1                          3     			END_COMM;
+    74                                               
+    75              1                          3     			$display("Address created = %b",addr_sent2RAM[i]);
+    76                                                			// perform write data CMD
+    77              1                          3      			WRT_DATA;
+    78                                               
+    79              1                          3     			for (int j = 0; j < 8;j++) begin
+    79              2                         24     
+    80                                               				
+    81              1                         24     				@(negedge clk_tb)
+    82              1                         24     				MOSI_tb = data_sent2RAM_assoc[j];
+    83                                               				
+    84                                               			end
+    85                                               			
+    86              1                          3     			END_COMM;
+    87                                               
+    88              1                          3     			$display("Data created   = %b",data_sent2RAM_assoc);
+    89                                                			// perform read address CMD
+    90              1                          3      			RD_ADDR;
+    91                                               
+    92              1                          3     			for (int j = 0; j < 8;j++) begin
+    92              2                         24     
+    93                                               				
+    94              1                         24     				@(negedge clk_tb)
+    95              1                         24     				MOSI_tb = addr_sent2RAM[i][j];
+    96                                               				
+    97                                               			end
+    98                                               
+    99              1                          3     			END_COMM;
+    100                                              
+    101                                               			// perform read data CMD
+    102             1                          3      			RD_DATA;
+    103                                              
+    104             1                          3     			for (int j = 0; j < 8;j++) begin
+    104             2                         24     
+    105                                              				// Dummy Data
+    106                                              				assert(spiData.randomize);
+    107             1                         24     				@(negedge clk_tb)
+    108             1                         24     				MOSI_tb = spiData.MOSI;
+    109                                              
+    110                                              			end
+    111                                              			// Give time for ram to assert tx_valid to high and assert the data on tx_data bus
+    112                                              
+    113             1                          3     			@(negedge clk_tb)
+    114             1                          3     			@(negedge clk_tb)
+    115                                              
+    116             1                          3     			$display("DATA_NUM = %0d",i+1);
+    117                                              			// data will be sent from slave
+    118             1                          3     			for(int j = 0;j < 8;j++) begin
+    118             2                         24     
+    119             1                         24     				@(negedge clk_tb)
+    120                                              				if (j == 6) begin
+    121                                              					
+    122             1                          3     					data_retrieved[i][7-j] = MISO_tb;
+    123             1                          3     					END_COMM;
+    124                                              
+    125                                              				end
+    126                                              				else begin
+    127                                              					
+    128             1                         21     					data_retrieved[i][7-j] = MISO_tb;
+    129                                              
+    130                                              				end
+    131                                              				
+    132                                              			end
+    133             1                          3     			CHK_READ(data_retrieved[i],data_sent2RAM_assoc);
+    134                                              			
+    135                                              		end
+    136             1                          1     		$display("-------- TEST CASES --------");
+    137             1                          1     		$display("Correct Cases   = %0d",correct);
+    138             1                          1     		$display("Incorrect Cases = %0d",incorrect);
+    139                                              
+    140             1                          1     		$stop;
+    141                                              
+    142                                              	end
+    143                                              
+    144             1                         12     	always @(posedge REQ_COMM) begin
+    145                                              		
+    146             1                         12     		spiData.covgrp_2.start;
+    147                                              
+    148                                              	end
+    149                                              
+    150             1                        188     	always @(posedge clk_tb) begin
+    151                                              
+    152                                              		if (REQ_COMM) begin	
+    153             1                         48     			spiData.MOSI_COMM = MOSI_tb;
+    154                                              		end
+    155                                              
+    156             1                        188     		spiData.covgrp_2.sample;
+    157                                              
+    158                                              	end
+    159                                              
+    160             1                         12     	always @(negedge REQ_COMM) begin
+    161                                              		
+    162             1                         12     		spiData.covgrp_2.stop;
+    163                                              
+    164                                              	end
+    165                                              
+    166                                              	task RST;
+    167                                              
+    168             1                          1     		@(negedge clk_tb)
+    169             1                          1     		rst_n_tb = 0;
+    170             1                          1     		spiData.rst_n = rst_n_tb;
+    171             1                          1     		fsm = IDLE;
+    172             1                          1     		spiData.state = fsm;
+    173             1                          1     		@(negedge clk_tb)
+    174             1                          1     		rst_n_tb = 1;
+    175             1                          1     		spiData.rst_n = rst_n_tb;
+    176                                              
+    177                                              	endtask
+    178                                              
+    179                                              	task START_COMM;
+    180                                              
+    181             1                         12     		@(negedge clk_tb)
+    182             1                         12     		SS_n_tb = 0;
+    183             1                         12     		spiData.SS_n = SS_n_tb;
+    184             1                         12     		fsm = CHK_CMD;
+    185             1                         12     		spiData.state = fsm;
+    186             1                         12     		@(negedge clk_tb);
+    187                                              
+    188                                              	endtask
+    189                                              
+    190                                              	task END_COMM;
+    191                                              
+    192             1                         12     		@(negedge clk_tb)
+    193             1                         12     		SS_n_tb = 1;
+    194             1                         12     		spiData.SS_n = SS_n_tb;
+    195             1                         12     		fsm = IDLE;
+    196             1                         12     		spiData.state = fsm;
+    197                                              
+    198                                              	endtask
+    199                                              
+    200                                              	task WRT_ADDR;
+    201                                              
+    202             1                          3     		REQ_COMM = 1;
+    203                                              		
+    204             1                          3     		START_COMM;
+    205             1                          3     		MOSI_tb = 0;
+    206             1                          3     		@(negedge clk_tb)
+    207             1                          3     	    fsm = WRITE_ADDR;
+    208             1                          3     		spiData.state = fsm;
+    209             1                          3     		MOSI_tb = 0;
+    210             1                          3     		@(negedge clk_tb)
+    211             1                          3     		MOSI_tb = 0;
+    212                                              
+    213             1                          3     		REQ_COMM = 0;
+    214                                              		
+    215                                              	endtask
+    216                                              
+    217                                              	task WRT_DATA;
+    218                                              
+    219             1                          3     		REQ_COMM = 1;
+    220                                              		
+    221             1                          3     		START_COMM;
+    222             1                          3     		MOSI_tb = 0;
+    223             1                          3     		@(negedge clk_tb)
+    224             1                          3     		fsm = WRITE_DATA;
+    225             1                          3     		spiData.state = fsm;
+    226             1                          3     		MOSI_tb = 0;
+    227             1                          3     		@(negedge clk_tb)
+    228             1                          3     		MOSI_tb = 1;
+    229                                              
+    230             1                          3     		REQ_COMM = 0;
+    231                                              		
+    232                                              	endtask
+    233                                              
+    234                                              	task RD_ADDR;
+    235                                              
+    236             1                          3     		REQ_COMM = 1;
+    237                                              		
+    238             1                          3     		START_COMM;
+    239             1                          3     		MOSI_tb = 1;
+    240             1                          3     		@(negedge clk_tb)
+    241             1                          3     		fsm = READ_ADDR;
+    242             1                          3     		spiData.state = fsm;
+    243             1                          3     		MOSI_tb = 1;
+    244             1                          3     		@(negedge clk_tb)
+    245             1                          3     		MOSI_tb = 0;
+    246                                              		
+    247             1                          3     		REQ_COMM = 0;
+    248                                              		
+    249                                              	endtask
+    250                                              
+    251                                              	task RD_DATA;
+    252                                              
+    253             1                          3     		REQ_COMM = 1;
+    254                                              
+    255             1                          3     		START_COMM;
+    256             1                          3     		MOSI_tb = 1;
+    257             1                          3     		@(negedge clk_tb)
+    258             1                          3     		fsm = READ_DATA;
+    259             1                          3     		spiData.state = fsm;
+    260             1                          3     		MOSI_tb = 1;
+    261             1                          3     		@(negedge clk_tb)
+    262             1                          3     		MOSI_tb = 1;
+    263                                              
+    264             1                          3     		REQ_COMM = 0;
+    265                                              		
+    266                                              	endtask
+    267                                              
+    268                                              	task CHK_READ (input [7:0] data_retrieved,data_expected);
+    269                                              		if (data_retrieved == data_expected) begin
+    270                                              			
+    271             1                          1     			$display("At time %0t data value = %b which equals expected %b",$time,data_retrieved,data_expected);
+    272             1                          1     			correct ++;
+    273                                              
+    274                                              		end
+    275                                              		else begin
+    276                                              			
+    277             1                          2     			$display("At time %0t data value = %b which NOT equals expected %b",$time,data_retrieved,data_expected);
+    278             1                          2     			incorrect ++;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        146        19       127    13.01%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /spi_Wrapper_tb --
+
+                                              Node      1H->0L      0L->1H                          "Coverage"
+                                              ---------------------------------------------------------------
+                                           MISO_tb           1           1                              100.00 
+                                           MOSI_tb           1           1                              100.00 
+                                          REQ_COMM           1           1                              100.00 
+                                           SS_n_tb           1           1                              100.00 
+                                            clk_tb           1           1                              100.00 
+                                        correct[0]           0           1                               50.00 
+                                     correct[1-31]           0           0                                0.00 
+                                               fsm               ENUM type       Value       Count 
+                                                                      IDLE           3      100.00 
+                                                                   CHK_CMD           4      100.00 
+                                                                WRITE_ADDR           1      100.00 
+                                                                WRITE_DATA           1      100.00 
+                                                                 READ_ADDR           1      100.00 
+                                                                 READ_DATA           1      100.00 
+                                      incorrect[0]           0           1                               50.00 
+                                   incorrect[1-31]           0           0                                0.00 
+                                          rst_n_tb           0           1                               50.00 
+
+Total Node Count     =         76 
+Toggled Node Count   =         11 
+Untoggled Node Count =         65 
+
+Toggle Coverage      =      13.01% (19 of 146 bins)
+
+=================================================================================
+=== Instance: /wrapper_package
+=== Design Unit: work.wrapper_package
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      2        na        na   100.00%
+        Coverpoints/Crosses          3        na        na        na
+            Covergroup Bins         11        11         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /wrapper_package/spi_data/covgrp_1              100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/wrapper_package::spi_data::covgrp_1  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin END_COMM                                       11          1          -    Covered              
+        bin STRT_COMM                                      11          1          -    Covered              
+ TYPE /wrapper_package/spi_data/covgrp_2              100.00%        100          -    Covered              
+    covered/total bins:                                     9          9          -                      
+    missing/total bins:                                     0          9          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CMDs_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/wrapper_package::spi_data::covgrp_2  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     9          9          -                      
+    missing/total bins:                                     0          9          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin MOSI_WRT_ADDR                                   2          1          -    Covered              
+        bin MOSI_WRT_DATA                                   6          1          -    Covered              
+        bin MOSI_RD_ADDR                                    5          1          -    Covered              
+        bin MOSI_RD_DATA                                   20          1          -    Covered              
+    Coverpoint CMDs_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin idle2_chk_cmd                                  12          1          -    Covered              
+        bin WRT_addr2_IDLE                                  3          1          -    Covered              
+        bin WRT_data2_IDLE                                  3          1          -    Covered              
+        bin RD_addr2_IDLE                                   3          1          -    Covered              
+        bin RD_data2_IDLE                                   2          1          -    Covered              
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       2         2         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /wrapper_package --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File project_package_wrapper.sv
+    1                                                package wrapper_package;
+    2                                                
+    3                                                	typedef enum {IDLE, CHK_CMD , WRITE_ADDR , WRITE_DATA , READ_ADDR, READ_DATA} fsm_states;
+    4                                                	
+    5                                                	bit [2:0] state;
+    6                                                
+    7                                                	class spi_data;
+    8                                                
+    9                                                		rand       bit MOSI;
+    10                                               		logic      MOSI_COMM;
+    11                                               		bit 	   clk;
+    12                                               		bit 	   SS_n;
+    13                                               		bit		   rst_n;
+    14                                               		bit [2:0] state;
+    15                                               
+    16                                               		covergroup covgrp_1 @(SS_n);
+    17                                               
+    18                                               			SS_n_cp: coverpoint SS_n iff (rst_n) {
+    19                                               				bins END_COMM = (0 => 1);
+    20                                               				bins STRT_COMM = (1 => 0);
+    21                                               			}
+    22                                               
+    23                                               		endgroup
+    24                                               
+    25                                               		covergroup covgrp_2;
+    26                                               
+    27                                               			MOSI_cp: coverpoint MOSI_COMM iff (rst_n) {
+    28                                               				bins MOSI_WRT_ADDR 	= (0 => 0 => 0);
+    29                                               				bins MOSI_WRT_DATA  = (0 => 0 => 1);
+    30                                               				bins MOSI_RD_ADDR 	= (1 => 1 => 0);
+    31                                               				bins MOSI_RD_DATA   = (1 => 1 => 1);
+    32                                               			}
+    33                                               
+    34                                               			CMDs_cp: coverpoint state iff (rst_n) {
+    35                                               
+    36                                               				bins idle2_chk_cmd = (IDLE => CHK_CMD);
+    37                                               				bins WRT_addr2_IDLE = (WRITE_ADDR => IDLE);
+    38                                               				bins WRT_data2_IDLE = (WRITE_DATA => IDLE);
+    39                                               				bins RD_addr2_IDLE = (READ_ADDR => IDLE);
+    40                                               				bins RD_data2_IDLE = (READ_DATA => IDLE);
+    41                                               
+    42                                               			}
+    43                                               
+    44                                               		endgroup
+    45                                               
+    46                                               		function new();
+    47                                               
+    48              1                          1     			covgrp_1 = new;
+    49              1                          1     			covgrp_2 = new;
+
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /wrapper_package/spi_data/covgrp_1              100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/wrapper_package::spi_data::covgrp_1  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin END_COMM                                       11          1          -    Covered              
+        bin STRT_COMM                                      11          1          -    Covered              
+ TYPE /wrapper_package/spi_data/covgrp_2              100.00%        100          -    Covered              
+    covered/total bins:                                     9          9          -                      
+    missing/total bins:                                     0          9          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CMDs_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/wrapper_package::spi_data::covgrp_2  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     9          9          -                      
+    missing/total bins:                                     0          9          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin MOSI_WRT_ADDR                                   2          1          -    Covered              
+        bin MOSI_WRT_DATA                                   6          1          -    Covered              
+        bin MOSI_RD_ADDR                                    5          1          -    Covered              
+        bin MOSI_RD_DATA                                   20          1          -    Covered              
+    Coverpoint CMDs_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin idle2_chk_cmd                                  12          1          -    Covered              
+        bin WRT_addr2_IDLE                                  3          1          -    Covered              
+        bin WRT_data2_IDLE                                  3          1          -    Covered              
+        bin RD_addr2_IDLE                                   3          1          -    Covered              
+        bin RD_data2_IDLE                                   2          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 2
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/spi_Wrapper_tb/DUT/sva/cov_rst_vals     spi_wrapper_sva Verilog  SVA  spi_wrapper_sva.sv(19)
+                                                                                 0 ZERO      
+
+TOTAL DIRECTIVE COVERAGE: 0.00%  COVERS: 1
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/spi_Wrapper_tb/#anonblk#26782082#59#4#/#anonblk#26782082#64#4#/#ublk#26782082#64/immed__66
+                     spi_wrapper_tb.sv(66)              0          1
+/spi_Wrapper_tb/#anonblk#26782082#59#4#/#anonblk#26782082#104#4#/#ublk#26782082#104/immed__106
+                     spi_wrapper_tb.sv(106)             0          1
+/spi_Wrapper_tb/DUT/sva/chk_rst_vals
+                     spi_wrapper_sva.sv(17)             1          0
+
+Total Coverage By Instance (filtered view): 69.23%
+

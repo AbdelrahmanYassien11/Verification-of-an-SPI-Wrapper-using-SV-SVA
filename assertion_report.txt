@@ -1,0 +1,38 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /spi_Wrapper_tb/DUT/sva
+=== Design Unit: work.spi_wrapper_sva
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         0         1     0.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/spi_Wrapper_tb/DUT/sva/chk_rst_vals
+                     C:/Users/nemo/Desktop/Project/Team_1/Stuffffffff/SPI_WRAPPER/spi_wrapper_sva.sv(28)
+                                                        0          0
+
+=================================================================================
+=== Instance: /spi_Wrapper_tb
+=== Design Unit: work.spi_Wrapper_tb
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         2         0   100.00%
+
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/spi_Wrapper_tb/DUT/sva/chk_rst_vals
+                     C:/Users/nemo/Desktop/Project/Team_1/Stuffffffff/SPI_WRAPPER/spi_wrapper_sva.sv(28)
+                                                        0          0
+
+Total Coverage By Instance (filtered view): 66.66%
+
+
